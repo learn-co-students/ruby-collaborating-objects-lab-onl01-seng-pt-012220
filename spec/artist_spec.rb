@@ -1,3 +1,5 @@
+require 'pry'
+
 describe 'Artist' do
 
   before(:example) {
@@ -26,6 +28,7 @@ describe 'Artist' do
       expect(Artist.all).to eq([artist])
       prince = Artist.new('Prince')
       expect(Artist.all).to eq([artist, prince])
+    
     end
   end
 
